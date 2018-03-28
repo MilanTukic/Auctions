@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_splash_screen_key"
+        android:summaryOn="Yes"
+        android:summaryOff="No"
+        android:title="Show splash screen" />
+
+    <!--
+
+    <CheckBoxPreference
+        android:id="@+id/cbEdit"
+        android:defaultValue="true"
+        android:key="@string/pref_splash_screen_edit"
+        android:title="Edit" />
+
+    <EditTextPreference
+        android:defaultValue="Milan"
+        android:key="@string/pref_user_first_name_key"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:title="First name"
+        android:summary="Milan"
+        />
+
+    <EditTextPreference
+        android:defaultValue="Tukic"
+        android:inputType="text"
+        android:key="@string/pref_user_last_name_key"
+        android:selectAllOnFocus="true"
+        android:title="Last name"
+        android:summary="Tukic" />
+
+    <EditTextPreference
+        android:defaultValue="milan_t95@gmail.com"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:key="@string/pref_user_email_key"
+        android:title="Email"
+        android:summary="milan_t95@gmail.com" />
+
+
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_user_password_value"
+        android:inputType="textPassword"
+        android:key="@string/pref_user_password_key"
+        android:selectAllOnFocus="true"
+        android:title="Password"
+        android:summary="@string/pref_user_password_value"
+      >
+    </EditTextPreference>
+
+    <EditTextPreference
+        android:defaultValue="Boska Buhe 2"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:key="@string/pref_user_address_key"
+        android:title="Address"
+        android:summary="Boska Buhe 2" />
+
+    <EditTextPreference
+        android:defaultValue="066/288-785"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:key="@string/pref_user_phone_key"
+        android:title="Phone"
+        android:summary="066/288-785"
+        />
+
+-->
+
+
+
+</PreferenceScreen>

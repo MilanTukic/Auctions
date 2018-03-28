@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+    <!-- Picture-->
+    <ImageView
+        android:id="@+id/list_item_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+
+         />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/list_bid_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:maxLines="1"
+            tools:text="Goran Ninkovic" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/list_bid_user_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            tools:text="$300" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_bid_user_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif"
+        tools:text="09.09.2017"
+        android:gravity="center"/>
+
+</LinearLayout>

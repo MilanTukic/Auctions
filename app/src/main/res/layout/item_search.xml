@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+
+    <EditText
+        android:id="@+id/etSearchItems"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="32dp"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:background="@drawable/round_textedit"
+        android:hint="Search"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:textColorHint="@color/searchHint"
+        android:textColor="@color/searchText"
+        android:fontFamily="sans-serif-light"
+        android:drawableLeft="@drawable/ic_action_action_search"
+        android:drawableTintMode="src_atop"
+        android:drawableTint="@color/colorAccent"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/clearText"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="clear"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

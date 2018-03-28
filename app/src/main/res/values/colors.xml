@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#679999</color>
+    <color name="colorPrimaryDark">#3b6b6b</color>
+    <color name="colorAccent">#679999</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+
+
+    <color name="backgroundOnIcon">#FFF</color>
+
+
+
+    <color name="searchBackground">#e0e0e0</color>
+    <color name="searchHint">#616161</color>
+    <color name="searchText">#212121</color>
+
+    <color name="trans">#00000000 </color>
+
+</resources>

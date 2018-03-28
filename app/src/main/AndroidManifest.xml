@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tukicmilan.auctions.milan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/esplash"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ItemsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".activities.ItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AuctionActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".data.ContentProvider"
+            android:authorities="com.example.tukicmilan.auctions.milan"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".activities.RecyclerViewActivity" />
+        <activity android:name=".activities.AddBidActivity" />
+        <activity android:name=".activities.EditUserPreferenceActivity" />
+    </application>
+
+</manifest>

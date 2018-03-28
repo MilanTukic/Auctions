@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/list_item_image"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:text="Ovo je naslov za ovaj item" />
+        <!-- Description -->
+
+        <TextView
+            android:id="@+id/list_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:text="Ovo je opis za ovaj item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sold"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/list_item_sold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:clickable="false"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

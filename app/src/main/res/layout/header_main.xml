@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="?attr/colorPrimary"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="editUser"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnEditClick"
+        android:onClick="onClick"
+        android:src="@drawable/ic_mode_edit_white_24dp"
+        android:background="@color/colorAccent"
+        />
+
+<!--
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="editUser"
+    android:layout_alignParentRight="true"
+    android:id="@+id/btnEditClick"
+    android:onClick="onClick"/>
+-->
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/milan"
+        android:layout_above="@id/milTuk"
+        android:paddingRight="170dp"
+        android:paddingBottom="10dp"
+       />
+
+    <TextView
+        android:id="@+id/milTuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan Tukic"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+
+
+        />
+
+
+
+</RelativeLayout>
